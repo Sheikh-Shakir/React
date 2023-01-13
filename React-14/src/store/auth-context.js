@@ -59,7 +59,7 @@ export const AuthContextProvider = (props) => {
 		const remainingTime = calculateRemainingTime(expirationTime);
 		logoutTimer = setTimeout(logoutHandler, remainingTime);
 	};
-
+ 
 	useEffect(() => {
 		if (tokenData) {
 			console.log(tokenData.duration);
